@@ -28,7 +28,7 @@ class WallModel extends Model
         $rStmt = Db::getInstance()->prepare('INSERT INTO' . Db::prefix(DbTableName::MEMBER_WALL) . '(profileId, post, createdDate) VALUES (:profileId, :post, :createdDate)');
         $rStmt->bindValue(':profileId', $iProfileId, PDO::PARAM_INT);
         $rStmt->bindValue(':post', $sPost, PDO::PARAM_STR);
-        $rStmt->bindValue(':dateTime', $sCreatedDate, PDO::PARAM_STR);
+        $rStmt->bindValue(':createdDate', $sCreatedDate, PDO::PARAM_STR);
 
         return $rStmt->execute();
     }
