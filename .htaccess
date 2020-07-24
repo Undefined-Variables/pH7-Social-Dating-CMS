@@ -329,6 +329,7 @@ ServerSignature Off
     SetEnvIfNoCase User-Agent "^Offline Explorer" bad_bot
     SetEnvIfNoCase User-Agent "^Web Image Collector" bad_bot
     SetEnvIfNoCase User-Agent "^lftp" bad_bot
+    SetEnvIfNoCase User-Agent "^ltx71" bad_bot
     SetEnvIfNoCase User-Agent "^Linkie" bad_bot
     SetEnvIfNoCase User-Agent "^LinkScan" bad_bot
     SetEnvIfNoCase User-Agent "^linktiger" bad_bot
